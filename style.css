@@ -1,0 +1,66 @@
+
+/*FORMATAÇÃO INICIAL*/
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(/arquivos/montanhas.jpg);
+}
+ul{
+    list-style: none;
+}
+/*----------------------------*/
+img{
+    width: 40px;
+    height: 60px;
+}
+input[type="checkbox"]{
+    display: none;
+}
+nav {
+    background: rgba(16, 16, 16, 0.5);
+    width: 300px;
+    height: 100vh;
+    left: -300px;
+    position: relative;
+    transition: all  0.5s;
+}
+input[type="checkbox"]:checked ~nav {
+    transform: translateX(300px);
+}
+ul{
+    
+    top: 100px;
+    left: 20px;   
+    position: absolute;
+    width: 100%;
+
+}
+li{
+    width: 250px;    
+    border-bottom: 1px solid rgba(128, 128, 128, 0.644);
+}
+a {
+    display: block;
+    padding: 20px 5px;
+    color: rgba(255, 255, 255, 0.644);
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+a:hover{
+    background: rgba(90, 82, 81, 0.212);
+    color: rgb(226, 62, 62);
+}
+
+label{
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+}
